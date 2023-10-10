@@ -25,19 +25,19 @@ function  checkWeather(city){
     
     
         if (data.weather[0].main == 'Clouds'){
-            weatherIcon.src= '/assest/images/clouds.png';
+            weatherIcon.src= './assest/images/clouds.png';
         }
         else if(data.weather[0].main == 'Rain'){
-            weatherIcon.src = "/assest/images/Rain.png"
+            weatherIcon.src = "./assest/images/Rain.png"
         }
         else if(data.weather[0].main == 'Drizzle'){
-            weatherIcon.src = "/assest/images/drizzle.png"
+            weatherIcon.src = "./assest/images/drizzle.png"
         }
         else if(data.weather[0].main == 'Mist'){
-            weatherIcon.src = "/assest/images/mist.png"
+            weatherIcon.src = "./assest/images/mist.png"
         }
         else if(data.weather[0].main == 'Clear'){
-            weatherIcon.src = "/assest/images/clear.png"
+            weatherIcon.src = "./assest/images/clear.png"
         }
     })
     .catch(err => {
