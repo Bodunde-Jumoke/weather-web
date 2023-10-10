@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&family=Poppins&family=Roboto:wght@100;300;500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.card{
+    color: #fff;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    margin: 50px auto;
+    border-radius: 15px;
+    padding:40px 35px;
+    background: radial-gradient(circle at top, #8cfe00, #5b548a);
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+input{
+    border: 0;
+    background: #ebfffc;
+    color: #555;
+    outline: none;
+    font-size: 18px;
+    height: 60px;
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 30px;
+    flex: 1;
+}
+button{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    background: #ebfffc;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+button img{
+    width: 20px;
+}
+.weather-icon{
+    width: 170px; 
+    margin-top: 30px;
+}
+
+.temp{
+    font-size: 60px;
+    font-weight: 600;
+}
+.city{
+    margin-top: -10px;
+    font-size: 40px;
+    font-weight: 600;
+
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.col{
+    display: flex; 
+    align-items: center;
+    text-align: left;   
+}
+.humid-icon{
+    width: 40px;
+    margin-right:10px ;
+}
+
+.Humidity, .wind-speed{
+    font-size: 20px;
+    font-weight: 400;
+    
+}
+
+.errMsg{
+    margin: 10px;
+    text-align: left;
+    visibility: hidden;
+}
+
