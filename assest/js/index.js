@@ -16,7 +16,6 @@ function  checkWeather(city){
         
     })
     .then(data => {
-        console.log(data)
         errMsg.style.display = 'none'
         document.querySelector('.city').innerHTML = data.name
         document.querySelector('.temp').innerHTML =  Math.round(data.main.temp)+ '°C'
@@ -28,7 +27,7 @@ function  checkWeather(city){
             weatherIcon.src= './assest/images/clouds.png';
         }
         else if(data.weather[0].main == 'Rain'){
-            weatherIcon.src = "./assest/images/Rain.png"
+            weatherIcon.src = "./assest/images/rain.png"
         }
         else if(data.weather[0].main == 'Drizzle'){
             weatherIcon.src = "./assest/images/drizzle.png"
